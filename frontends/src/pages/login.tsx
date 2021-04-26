@@ -1,6 +1,6 @@
 import React, { Component, createRef, RefObject } from 'react'
 import { Form, FormInstance, Input, Button, Space, message } from 'antd'
-import { set, get } from '../utils/storage'
+import { set } from '../utils/storage'
 import '../static/css/login.css'
 import login from '../api/login'
 

@@ -5,13 +5,15 @@ interface IRouter {
     title: string,
     path: string,
     component? : ReactNode,
-    children?: IRouter[] 
+    children?: IRouter[],
+    key: string
 }
 
 const router: IRouter[] = [
     {
         path: '/login',
         title: '登录',
+        key: 'login',
         component: <Login/>
     }
 ]

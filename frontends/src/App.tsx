@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Login from './pages/login'
+import View from './components/view'
 
 class App extends Component<any, any> {
   render () {
     return (
       <>
-        <Login/>
+        <View/>
       </>
     )
   }
