@@ -1,4 +1,5 @@
 import React, { ReactNode, lazy } from 'react'
+const Dashboard = lazy(() => import('../pages/dashboard'))
 const Login = lazy(() => import('../pages/login'))
 const Page404 = lazy(() => import('../pages/page404'))
 
@@ -13,11 +14,18 @@ interface IRouter {
 
 const router: IRouter[] = [
     {
+        path: '/',
+        title: '登录',
+        key: 'dashboard',
+        component: <Dashboard/>
+    },
+    {
         path: '/login',
         title: '登录',
         key: 'login',
         component: <Login/>
     },
+    
     {
         path: '*',
         title: '404',
