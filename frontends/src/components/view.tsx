@@ -1,6 +1,6 @@
 import React, { Component, Suspense } from 'react'
 import router from '../router'
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom"
 
 class View extends Component {
     render () {

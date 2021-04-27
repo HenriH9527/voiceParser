@@ -15,7 +15,7 @@ interface IRouter {
 const router: IRouter[] = [
     {
         path: '/',
-        title: '登录',
+        title: '仪表盘',
         key: 'dashboard',
         component: <Dashboard/>
     },
