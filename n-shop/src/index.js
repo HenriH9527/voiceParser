@@ -13,11 +13,14 @@ import rootReducer from './reducers'
 import routes from './routers'
 import { BrowserRouter as Router} from 'react-router-dom'
 
+import NavigationBar from './components/navigationBar'
+
 const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(logger, thunk)))
 
 ReactDOM.render(
   <Provider store={ store }>
     <Router routes= { routes }>
+      <NavigationBar />
       { routes }
     </Router>
   </Provider>,
